@@ -1,13 +1,26 @@
-<div class="flex flex-col gap-1">
-  <div class="text-custom-title text-4xl font-semibold cursor-pointer">{{ nameTitle }}</div>
-  <div class="text-custom-accent font-semibold cursor-pointer">{{ status }}</div>
-  <div class="text-custom-text text-sm cursor-pointer">{{ caption }}</div>
-  <div class="mt-2">
-    <a [href]="resumeUrl" target="_blank">
-    <span class="rounded-md text-white bg-custom-accent inline-block py-1 px-2 cursor-pointer">
-      {{ btnViewResume }}
-      <i class="fa-solid fa-arrow-down rotate-90 animate-bounce hover:text-white text-sm"></i>
-    </span>
-  </a>
+<div class="flex flex-col gap-1 sm:gap-2 md:gap-3">
+  <!-- Title -->
+  <div class="text-custom-title text-2xl sm:text-3xl md:text-4xl font-semibold cursor-pointer">
+    {{ nameTitle }}
+  </div>
+
+  <!-- Status -->
+  <div class="text-custom-accent text-base sm:text-lg font-semibold cursor-pointer">
+    {{ status }}
+  </div>
+
+  <!-- Caption -->
+  <div class="text-custom-text text-sm sm:text-base cursor-pointer">
+    {{ caption }}
+  </div>
+
+  <!-- Resume Button -->
+  <div class="mt-3">
+    <a [href]="resumeUrl" target="_blank" rel="noopener noreferrer">
+      <span class="inline-flex items-center gap-2 rounded-md text-white bg-custom-accent py-1.5 px-3 cursor-pointer hover:bg-opacity-90 transition duration-200">
+        {{ btnViewResume }}
+        <i class="fa-solid fa-arrow-down rotate-90 animate-bounce text-sm"></i>
+      </span>
+    </a>
   </div>
 </div>

@@ -1,6 +1,11 @@
-<div id="about">
-  <div>{{ title }}</div>
-  <div class="text-custom-text text-sm">
+<div id="about" class="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-4">
+  <!-- Title -->
+  <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold text-custom-text">
+    {{ title }}
+  </h2>
+
+  <!-- Content -->
+  <div class="text-custom-text text-sm sm:text-base leading-relaxed">
     {{ aboutContent }}
   </div>
 </div>
