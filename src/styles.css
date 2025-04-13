@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+:root {
+  --color-background: #000000;
+  --color-text: #B7B7B7;
+  --color-title: #1DCD9F;
+  --color-accent: #169976;
+  --color-base: #222222;
+}
+
+.bg-custom-background {
+  background-color: var(--color-background);
+}
+
+.text-custom-text {
+  color: var(--color-text);
+}
+
+.text-custom-title {
+  color: var(--color-title);
+}
+
+.text-custom-accent {
+  color: var(--color-accent);
+}
+
+.bg-custom-base {
+  background-color: var(--color-base);
+}
+
+.bg-custom-accent {
+  background-color:var(--color-accent)
+}
+
+
+body {
+  background-color:var(--color-background);
+}
+
+
+

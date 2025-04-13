@@ -1,0 +1,13 @@
+<div class="flex flex-col gap-1">
+  <div class="text-custom-title text-4xl font-semibold cursor-pointer">{{ nameTitle }}</div>
+  <div class="text-custom-accent font-semibold cursor-pointer">{{ status }}</div>
+  <div class="text-custom-text text-sm cursor-pointer">{{ caption }}</div>
+  <div class="mt-2">
+    <a [href]="resumeUrl" target="_blank">
+    <span class="rounded-md text-white bg-custom-accent inline-block py-1 px-2 cursor-pointer">
+      {{ btnViewResume }}
+      <i class="fa-solid fa-arrow-down rotate-90 animate-bounce hover:text-white text-sm"></i>
+    </span>
+  </a>
+  </div>
+</div>
