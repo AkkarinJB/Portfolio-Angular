@@ -1,88 +1,74 @@
-<div id="projects">
-    <div class="text-xl sm:text-2xl md:text-3xl font-semibold text-custom-text ">Projects</div>
-<div>
-    <div class="grid grid-cols-[25%_75%] hover:bg-neutral-900 rounded-md px-2 py-6">
-        <div>
-          <div>
-            <span class="text-sm">2025</span>
-          </div>
-          <div>
-            <img
-            class="w-5/6 rounded-md border-2"
-            src="/project1.gif" alt="Food-recommend">
-          </div>
-        </div>
-        <div class="grid gap-y-4">
-          <div class="text-custom-accent">Food-recommend WebApp</div>
-          <div>
-            <div><i class="fa-brands fa-github hover:scale-125"></i></div>
-          </div>
-          <div class="text-sm">{{description1}}</div>
-          <div class="flex gap-4 text-sm">
-            <div class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">React</div>
-            <div class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">FastApi</div>
-            <div class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">Tailwind</div>
-            <div class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">Vercal</div>
-            <div class="bg-custom-base px-2 py-1 rounded-sm hover:bg-custom-accent">Railway</div>
-          </div>
-        </div>
-      </div>
-</div>
+<div id="projects" class="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-6">
 
+  <!-- Section Title -->
+  <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold text-custom-text mb-6">
+    Projects
+  </h2>
 
-<div>
-    <div class="grid grid-cols-[25%_75%]  hover:bg-neutral-900 rounded-md px-2 py-6">
-        <div>
-          <div>
-            <span class="text-sm">2024</span>
-          </div>
-          <div>
-            <img
-            class="w-5/6  rounded-md border-2"
-            src="/project2.gif" alt="personal web">
-          </div>
-        </div>
-        <div class="grid gap-y-4">
-          <div class="text-custom-accent">Personal Website</div>
-          <div>
-            <div><i class="fa-brands fa-github hover:scale-125"></i></div>
-          </div>
-          <div class="text-sm">{{description2}}</div>
-          <div class="flex gap-4 text-sm">
-            <div class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">React</div>
-            <div class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">Typescript</div>
-            <div class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">Tailwind CSS</div>
-          </div>
-        </div>
-      </div>
-</div>
+  <!-- Project Block -->
+  <div class="space-y-8">
 
-
-<div>
-  <div class="grid grid-cols-[25%_75%]  hover:bg-neutral-900 rounded-md px-2 py-6">
-      <div>
-        <div>
-          <span class="text-sm">2025</span>
-        </div>
-        <div>
-          <img
-          class="w-5/6  rounded-md border-2"
-          src="/project3.gif" alt="personal web">
-        </div>
+    <!-- Project 1 -->
+    <div class="grid grid-cols-1 md:grid-cols-[30%_70%] gap-4 hover:bg-neutral-900 rounded-md p-4 md:p-6 transition duration-200">
+      <div class="space-y-2">
+        <span class="text-sm text-gray-400">2025</span>
+        <img class="w-full rounded-md border-2" src="/project1.gif" alt="Food-recommend">
       </div>
       <div class="grid gap-y-4">
-        <div class="text-custom-accent">Portfolio Website</div>
+        <div class="text-custom-accent font-semibold text-lg">Food-recommend WebApp</div>
         <div>
-          <div><i class="fa-brands fa-github hover:scale-125"></i></div>
+          <a href="#" target="_blank"><i class="fa-brands fa-github hover:scale-125 transition-transform duration-150"></i></a>
         </div>
-        <div class="text-sm">{{description3}}</div>
-        <div class="flex gap-4 text-sm">
-          <div class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">Angular</div>
-          <div class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">FontAwsome</div>
-          <div class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">Tailwind CSS</div>
+        <div class="text-sm text-custom-text">{{ description1 }}</div>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">React</span>
+          <span class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">FastAPI</span>
+          <span class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">Tailwind</span>
+          <span class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">Vercel</span>
+          <span class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">Railway</span>
         </div>
       </div>
     </div>
-</div>
 
+    <!-- Project 2 -->
+    <div class="grid grid-cols-1 md:grid-cols-[30%_70%] gap-4 hover:bg-neutral-900 rounded-md p-4 md:p-6 transition duration-200">
+      <div class="space-y-2">
+        <span class="text-sm text-gray-400">2024</span>
+        <img class="w-full rounded-md border-2" src="/project2.gif" alt="personal web">
+      </div>
+      <div class="grid gap-y-4">
+        <div class="text-custom-accent font-semibold text-lg">Personal Website</div>
+        <div>
+          <a href="#" target="_blank"><i class="fa-brands fa-github hover:scale-125 transition-transform duration-150"></i></a>
+        </div>
+        <div class="text-sm text-custom-text">{{ description2 }}</div>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">React</span>
+          <span class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">TypeScript</span>
+          <span class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">Tailwind CSS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="grid grid-cols-1 md:grid-cols-[30%_70%] gap-4 hover:bg-neutral-900 rounded-md p-4 md:p-6 transition duration-200">
+      <div class="space-y-2">
+        <span class="text-sm text-gray-400">2025</span>
+        <img class="w-full rounded-md border-2" src="/project3.gif" alt="portfolio web">
+      </div>
+      <div class="grid gap-y-4">
+        <div class="text-custom-accent font-semibold text-lg">Portfolio Website</div>
+        <div>
+          <a href="#" target="_blank"><i class="fa-brands fa-github hover:scale-125 transition-transform duration-150"></i></a>
+        </div>
+        <div class="text-sm text-custom-text">{{ description3 }}</div>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">Angular</span>
+          <span class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">FontAwesome</span>
+          <span class="bg-custom-base px-2 py-1 rounded-sm hover:text-custom-accent">Tailwind CSS</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
